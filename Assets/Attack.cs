@@ -82,6 +82,8 @@ public class Attack : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(attackStartPoint.position, direction, distance, LayerMask.GetMask("Enemy"));
 
+        Debug.DrawLine(attackStartPoint.position, attackEndPoint.position, Color.red, 0.2f);
+
         if (hit.collider != null)
         {
             Debug.Log("Hit " + hit.transform.gameObject.name);

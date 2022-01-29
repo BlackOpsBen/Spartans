@@ -47,15 +47,12 @@ public class ArcherFiring : MonoBehaviour
             timer = 0.0f;
 
             animator.SetTrigger("Fire");
-
-            Debug.Log("Start fire...");
         }
     }
 
     // Called by Animation Event
     public void OnFire()
     {
-        Debug.Log("Archer fired!");
         Instantiate(arrowSmallPrefab, arrowSmallSpawnPos.position, Quaternion.identity, arrowSmallSpawnPos);
 
         PickTarget();

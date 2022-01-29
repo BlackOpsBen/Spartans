@@ -142,11 +142,13 @@ public class EnemyAttack : MonoBehaviour
 
     private void CheckForHit()
     {
-        Vector2 direction = hitStart.position - hitEnd.position;
+        Vector2 direction = hitEnd.position - hitStart.position;
 
         float distance = Vector2.Distance(hitEnd.position, hitStart.position);
 
         RaycastHit2D hit = Physics2D.Raycast(hitStart.position, direction, distance, LayerMask.GetMask("Player"));
+
+        Debug.DrawLine(hitStart.position, hitEnd.position, Color.red, 0.2f);
 
         if (hit.collider != null)
         {
