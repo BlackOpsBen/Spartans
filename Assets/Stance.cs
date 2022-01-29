@@ -52,4 +52,9 @@ public class Stance : MonoBehaviour
         isRaising = value;
         Debug.Log("isRaising = " + isRaising);
     }
+
+    public bool GetIsRaising()
+    {
+        return isRaising;
+    }
 }

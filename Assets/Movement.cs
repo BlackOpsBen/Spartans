@@ -8,6 +8,8 @@ public class Movement : MonoBehaviour
     [SerializeField] private float maxMoveSpeed = 2.0f;
     [SerializeField] private float acceleration = 5.0f;
 
+    private Stance stance;
+
     private float moveDirection = 0.0f;
 
     private float speed = 0.0f;
@@ -16,6 +18,7 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
+        stance = GetComponent<Stance>();
         animator = GetComponent<Animator>();
     }
 
@@ -51,11 +54,19 @@ public class Movement : MonoBehaviour
     {
         moveDirection = direction;
 
-        if (direction == -1.0f)
+        if (stance.GetIsRaising())
+        {
+            UpdateGameObjectFacing();
+        }
+    }
+
+    private void UpdateGameObjectFacing()
+    {
+        if (moveDirection == -1.0f)
         {
             transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
         }
-        else if (direction == 1.0f)
+        else if (moveDirection == 1.0f)
         {
             transform.localScale = Vector3.one;
         }
