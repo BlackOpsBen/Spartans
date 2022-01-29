@@ -9,7 +9,7 @@ public class EnemyInterface : MonoBehaviour
 
     [SerializeField] private PlayerInterface nearestSpartan;
     private float distToNearestSpartan = float.MaxValue;
-    private float stoppingDist = 5.0f;
+    private float stoppingDist = 2.25f;
     [SerializeField] private List<PlayerInterface> spartans = new List<PlayerInterface>();
 
     private void Start()
@@ -40,7 +40,7 @@ public class EnemyInterface : MonoBehaviour
 
     private void MoveTowardNearestSpartan()
     {
-        if (distToNearestSpartan > float.Epsilon)
+        if (distToNearestSpartan > stoppingDist)
         {
             float direction = 1.0f;
 
@@ -60,5 +60,10 @@ public class EnemyInterface : MonoBehaviour
     public void SetMoveInput(float direction)
     {
         movement.SetMoveDirection(direction);
+    }
+
+    public float GetDistanceToNearestSpartan()
+    {
+        return distToNearestSpartan;
     }
 }

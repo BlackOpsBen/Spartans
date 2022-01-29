@@ -77,11 +77,11 @@ public class Movement : MonoBehaviour
     {
         if (moveDirection == -1.0f)
         {
-            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f) * 1.5f;
         }
         else if (moveDirection == 1.0f)
         {
-            transform.localScale = Vector3.one;
+            transform.localScale = Vector3.one * 1.5f;
         }
     }
 }
