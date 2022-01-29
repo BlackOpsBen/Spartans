@@ -1833,8 +1833,8 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1 &483830483
 GameObject:
@@ -1845,6 +1845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 483830484}
+  - component: {fileID: 483830485}
   m_Layer: 0
   m_Name: Spawners
   m_TagString: Untagged
@@ -1860,7 +1861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483830483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1260619393791443487}
@@ -1868,6 +1869,25 @@ Transform:
   m_Father: {fileID: 1770835717}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &483830485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483830483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23611066b0fd5a745b6c08a1926830e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 7565673578388197319, guid: 1204cb8fa51843546ad736a6e93d0e01, type: 3}
+  waveInterval: 5
+  startingWaveSize: 5
+  increaseWaveSizeEveryNWaves: 1
+  waveSizeIncrement: 1
+  spawnOffset: 1
 --- !u!1 &535217726
 GameObject:
   m_ObjectHideFlags: 0
@@ -6092,3 +6112,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a7f064c78dae6d479da32defeda5f7f, type: 3}
+--- !u!1001 &7517998977607850476
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988458, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517998975772988463, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+      propertyPath: m_Name
+      value: DeathPFX
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}

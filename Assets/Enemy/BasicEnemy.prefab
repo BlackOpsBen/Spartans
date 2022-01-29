@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 3221726577046971298}
   - component: {fileID: 925147659136674090}
   - component: {fileID: 7009041152814906940}
+  - component: {fileID: 3611271383557654106}
   m_Layer: 6
   m_Name: BasicEnemy
   m_TagString: Untagged
@@ -258,7 +259,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 0.9375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -280,7 +281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nearestSpartan: {fileID: 0}
-  spartans: []
 --- !u!114 &7009041152814906940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +306,20 @@ MonoBehaviour:
   attackDistance: 3
   hitStart: {fileID: 53173176911791812}
   hitEnd: {fileID: 6845440044480178100}
+--- !u!114 &3611271383557654106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7565673578388197319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ddf3ba19e779e42997b0446aac62c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathPFX: {fileID: 7517998975772988463, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
+  startingHP: 1
 --- !u!1 &7667277502632444350
 GameObject:
   m_ObjectHideFlags: 0

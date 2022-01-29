@@ -86,7 +86,12 @@ public class Attack : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.Log("Hit " + hit.transform.gameObject.name);
+            Health enemyHealth = hit.transform.GetComponent<Health>();
+
+            if (enemyHealth != null)
+            {
+                enemyHealth.Hit();
+            }
         }
     }
 }

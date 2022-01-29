@@ -5,6 +5,20 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
+
     [SerializeField] private List<PlayerInterface> spartans = new List<PlayerInterface>();
 
     private void Start()
@@ -69,5 +83,15 @@ public class PlayerController : MonoBehaviour
         int rand = UnityEngine.Random.Range(0, spartans.Count);
 
         return spartans[rand].transform;
+    }
+
+    public List<PlayerInterface> GetSpartans()
+    {
+        return spartans;
+    }
+
+    public void RemoveDeadSpartan(PlayerInterface deadSpartan)
+    {
+        spartans.Remove(deadSpartan);
     }
 }

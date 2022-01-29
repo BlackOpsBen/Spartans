@@ -10,11 +10,9 @@ public class EnemyInterface : MonoBehaviour
     [SerializeField] private PlayerInterface nearestSpartan;
     private float distToNearestSpartan = float.MaxValue;
     private float stoppingDist = 2.25f;
-    [SerializeField] private List<PlayerInterface> spartans = new List<PlayerInterface>();
 
     private void Start()
     {
-        spartans.AddRange(FindObjectsOfType<PlayerInterface>());
         movement = GetComponent<Movement>();
     }
 
@@ -27,13 +25,13 @@ public class EnemyInterface : MonoBehaviour
     private void FindNearestSpartan()
     {
         distToNearestSpartan = float.MaxValue;
-        for (int i = 0; i < spartans.Count; i++)
+        for (int i = 0; i < PlayerController.Instance.GetSpartans().Count; i++)
         {
-            float distance = Vector2.Distance(spartans[i].transform.position, transform.position);
+            float distance = Vector2.Distance(PlayerController.Instance.GetSpartans()[i].transform.position, transform.position);
             if (distance < distToNearestSpartan)
             {
                 distToNearestSpartan = distance;
-                nearestSpartan = spartans[i];
+                nearestSpartan = PlayerController.Instance.GetSpartans()[i];
             }
         }
     }
