@@ -89,6 +89,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4b22d614-0863-4251-bf62-8f2e7fd1faed
     m_ActionName: Player/RaiseShield[/Keyboard/space,/XInputControllerWindows/leftTrigger]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6397094471500253182}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 42230acc-3b7a-401e-8576-9ae0673d655a
+    m_ActionName: Player/Attack[/Keyboard/space,/XInputControllerWindows/rightTrigger,/XInputControllerWindows/buttonSouth]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

@@ -34,9 +34,8 @@ public class Stance : MonoBehaviour
         {
             raisedPercent -= switchSpeed * Time.deltaTime;
         }
-        raisedPercent = Mathf.Clamp(raisedPercent, 0.0f, 1.0f);
 
-        Debug.Log("Stance percent = " + raisedPercent);
+        raisedPercent = Mathf.Clamp(raisedPercent, 0.0f, 1.0f);
     }
 
     private void UpdateGameObjectTransforms()

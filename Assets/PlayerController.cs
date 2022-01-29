@@ -52,4 +52,15 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            foreach (PlayerInterface spartan in spartans)
+            {
+                spartan.StartAttackInput();
+            }
+        }
+    }
 }
