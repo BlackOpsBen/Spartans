@@ -14,10 +14,21 @@ public class HighScores : MonoBehaviour
     static HighScores instance; //Required for STATIC usability
     void Awake()
     {
-        instance = this; //Sets Static Instance
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+
+    private void Start()
+    {
         myDisplay = GetComponent<DisplayHighscores>();
     }
-    
+
     public static void UploadScore(string username, int score)  //CALLED when Uploading new Score to WEBSITE
     {//STATIC to call from other scripts easily
         instance.StartCoroutine(instance.DatabaseUpload(username,score)); //Calls Instance

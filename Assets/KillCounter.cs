@@ -40,4 +40,9 @@ public class KillCounter : MonoBehaviour
     {
         killsLabel.text = kills.ToString();
     }
+
+    public int GetKills()
+    {
+        return kills;
+    }
 }

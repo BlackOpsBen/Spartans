@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3561878215609276472}
   - component: {fileID: 3561878215609276473}
   - component: {fileID: 3561878215609276474}
+  - component: {fileID: 6187632207948485159}
   m_Layer: 5
   m_Name: SubmitScoreCanvas
   m_TagString: Untagged
@@ -100,6 +101,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6187632207948485159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3561878215609276475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08043b9bf66174f86b09a8e59756319d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameInput: {fileID: 3561878216167571160}
+  submitButton: {fileID: 3561878216242927364}
 --- !u!1 &3561878216167571162
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +438,6 @@ GameObject:
   - component: {fileID: 3561878216242927418}
   - component: {fileID: 3561878216242927419}
   - component: {fileID: 3561878216242927364}
-  - component: {fileID: 3561878216242927417}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -533,7 +547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3561878216242927417}
+      - m_Target: {fileID: 6187632207948485159}
         m_TargetAssemblyTypeName: SaveScore, Assembly-CSharp
         m_MethodName: SubmitScore
         m_Mode: 1
@@ -545,20 +559,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3561878216242927417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3561878216242927366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08043b9bf66174f86b09a8e59756319d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameInput: {fileID: 3561878216167571160}
-  submitButton: {fileID: 3561878216242927364}
 --- !u!1 &3561878216466531031
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +596,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3561878216466531028
 CanvasRenderer:
@@ -626,7 +626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

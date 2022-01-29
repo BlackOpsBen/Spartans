@@ -56,7 +56,14 @@ public class ArcherFiring : MonoBehaviour
     {
         Instantiate(arrowSmallPrefab, arrowSmallSpawnPos.position, Quaternion.identity, arrowSmallSpawnPos);
 
-        PickTarget();
+        if (PlayerController.Instance.GetSpartans().Count < 1)
+        {
+            target = Camera.main.transform;
+        }
+        else
+        {
+            PickTarget();
+        }
 
         StartCoroutine(SpawnArrow());
     }

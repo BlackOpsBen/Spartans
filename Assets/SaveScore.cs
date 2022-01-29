@@ -8,10 +8,21 @@ public class SaveScore : MonoBehaviour
 {
     [SerializeField] private TMP_InputField nameInput;
     [SerializeField] private Button submitButton;
+    [SerializeField] private GameObject scoreboardUI;
 
     public void SubmitScore()
     {
-        Debug.Log("Name: " + nameInput.text + " - Length = " + nameInput.text.Length);
+        int score = KillCounter.Instance.GetKills();
+
+        if (score > PlayerPrefs.GetInt("Highscore"))
+        {
+            PlayerPrefs.SetInt("Highscore", score);
+
+            HighScores.UploadScore(nameInput.text, score);
+        }
+
+        scoreboardUI.SetActive(true);
+        gameObject.SetActive(false);
     }
 
     private void Update()
