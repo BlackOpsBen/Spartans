@@ -76,22 +76,22 @@ TextureImporter:
     second: immortal_run_5
   - first:
       213: -2943835317918062483
-    second: sprites_37
+    second: archer_fire_2
   - first:
       213: -9009826273307446855
-    second: sprites_38
+    second: archer_fire_3
   - first:
       213: -6038895966588477023
-    second: sprites_39
+    second: archer_fire_4
   - first:
       213: 2527441650270232441
-    second: sprites_40
+    second: archer_idle
   - first:
       213: 5163875854333359583
-    second: sprites_41
+    second: archer_fire_0
   - first:
       213: -7573515227342601164
-    second: sprites_42
+    second: archer_fire_1
   - first:
       213: 6128299156075563123
     second: spear
@@ -745,12 +745,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprites_37
+      name: archer_fire_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 32
-        width: 16
+        width: 15
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -766,12 +766,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprites_38
+      name: archer_fire_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 49
         y: 32
-        width: 16
+        width: 15
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -787,12 +787,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprites_39
+      name: archer_fire_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 32
-        width: 16
+        width: 15
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -808,12 +808,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprites_40
+      name: archer_idle
       rect:
         serializedVersion: 2
-        x: 80
+        x: 81
         y: 32
-        width: 16
+        width: 15
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -829,12 +829,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprites_41
+      name: archer_fire_0
       rect:
         serializedVersion: 2
-        x: 96
+        x: 97
         y: 32
-        width: 16
+        width: 15
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -850,12 +850,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprites_42
+      name: archer_fire_1
       rect:
         serializedVersion: 2
-        x: 112
+        x: 113
         y: 32
-        width: 16
+        width: 15
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -942,7 +942,7 @@ TextureImporter:
         width: 8
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
