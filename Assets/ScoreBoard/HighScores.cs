@@ -11,16 +11,16 @@ public class HighScores : MonoBehaviour
     public PlayerScore[] scoreList;
     DisplayHighscores myDisplay;
 
-    static HighScores instance; //Required for STATIC usability
+    public static HighScores Instance { get; private set; } //Required for STATIC usability
     void Awake()
     {
-        if (instance != null)
+        if (Instance != null)
         {
             Destroy(gameObject);
         }
         else
         {
-            instance = this;
+            Instance = this;
         }
     }
 
@@ -29,13 +29,14 @@ public class HighScores : MonoBehaviour
         myDisplay = GetComponent<DisplayHighscores>();
     }
 
-    public static void UploadScore(string username, int score)  //CALLED when Uploading new Score to WEBSITE
-    {//STATIC to call from other scripts easily
-        instance.StartCoroutine(instance.DatabaseUpload(username,score)); //Calls Instance
+    public void UploadScore(string username, int score)  //CALLED when Uploading new Score to WEBSITE
+    {
+        StartCoroutine(Instance.DatabaseUpload(username,score));
     }
 
     IEnumerator DatabaseUpload(string userame, int score) //Called when sending new score to Website
     {
+
         WWW www = new WWW(webURL + privateCode + "/add/" + WWW.EscapeURL(userame) + "/" + score);
         yield return www;
 

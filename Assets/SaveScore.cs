@@ -12,16 +12,19 @@ public class SaveScore : MonoBehaviour
 
     public void SubmitScore()
     {
+        scoreboardUI.SetActive(true);
+
         int score = KillCounter.Instance.GetKills();
 
-        if (score > PlayerPrefs.GetInt("Highscore"))
+        if (HighScores.Instance == null)
         {
-            PlayerPrefs.SetInt("Highscore", score);
-
-            HighScores.UploadScore(nameInput.text, score);
+            Debug.LogWarning("Highscores instance missing!");
+        }
+        else
+        {
+            HighScores.Instance.UploadScore(nameInput.text, score);
         }
 
-        scoreboardUI.SetActive(true);
         gameObject.SetActive(false);
     }
 

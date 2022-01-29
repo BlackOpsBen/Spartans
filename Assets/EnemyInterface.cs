@@ -18,8 +18,11 @@ public class EnemyInterface : MonoBehaviour
 
     private void Update()
     {
-        FindNearestSpartan();
-        MoveTowardNearestSpartan();
+        if (PlayerController.Instance.GetSpartans().Count > 0)
+        {
+            FindNearestSpartan();
+            MoveTowardNearestSpartan();
+        }
     }
 
     private void FindNearestSpartan()
