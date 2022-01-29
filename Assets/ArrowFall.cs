@@ -42,5 +42,16 @@ public class ArrowFall : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isFalling = false;
+
+        GetComponent<Collider2D>().enabled = false;
+
+        transform.parent = collision.gameObject.transform;
+
+        Health spartanHealth = collision.GetComponent<Health>();
+
+        if (spartanHealth != null)
+        {
+            spartanHealth.Hit();
+        }
     }
 }
