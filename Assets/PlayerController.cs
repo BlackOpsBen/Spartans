@@ -63,4 +63,11 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    public Transform GetRandomSpartan()
+    {
+        int rand = UnityEngine.Random.Range(0, spartans.Count);
+
+        return spartans[rand].transform;
+    }
 }

@@ -29,7 +29,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.69, y: 3.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7623449894915094635}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -116,3 +117,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firingInterval: 5
+  arrowSmallSpawnPos: {fileID: 7623449894915094635}
+  arrowSmallPrefab: {fileID: 1483004973038278990, guid: 98de7f4adf152594e9097f98c9d27b9f, type: 3}
+  arrowPrefab: {fileID: 70998548931208752, guid: 61239d39164aeca4aac895518875972d, type: 3}
+  arrowSpawnYPos: 6.5
+  arrowFallDelayMin: 1
+  arrowFallDelayMax: 1.5
+  maxShotDeviation: 5
+--- !u!1 &7392684644653468641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7623449894915094635}
+  m_Layer: 0
+  m_Name: ArrowLaunchPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7623449894915094635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7392684644653468641}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.345, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1924835656395988819}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
