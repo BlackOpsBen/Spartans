@@ -12,7 +12,9 @@ public class Attack : MonoBehaviour
 
     [SerializeField] private float resetSpeed = 5.0f;
 
-    [SerializeField] private GameObject thrustObject;
+    [SerializeField] private Transform thrustObject;
+    [SerializeField] private Transform attackStartPoint;
+    [SerializeField] private Transform attackEndPoint;
 
     private bool isAttacking = false;
 
@@ -48,6 +50,7 @@ public class Attack : MonoBehaviour
 
         if (attackPercent == 1.0f)
         {
+            CheckForHit();
             isAttacking = false;
         }
         else if (attackPercent == 0.0f)
@@ -58,8 +61,8 @@ public class Attack : MonoBehaviour
 
     private void UpdateGameObjectTransform()
     {
-        thrustObject.transform.localPosition = Vector3.Lerp(Vector3.zero, attackPosition, attackPercent);
-        thrustObject.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, Mathf.Lerp(0.0f, attackRotation, attackPercent));
+        thrustObject.localPosition = Vector3.Lerp(Vector3.zero, attackPosition, attackPercent);
+        thrustObject.localRotation = Quaternion.Euler(0.0f, 0.0f, Mathf.Lerp(0.0f, attackRotation, attackPercent));
     }
 
     public void PrimaryAttack()
@@ -68,6 +71,20 @@ public class Attack : MonoBehaviour
         {
             isAttacking = true;
             isReady = false;
+        }
+    }
+
+    private void CheckForHit()
+    {
+        Vector2 direction = attackEndPoint.position - attackStartPoint.position;
+
+        float distance = Vector2.Distance(attackEndPoint.position, attackStartPoint.position);
+
+        RaycastHit2D hit = Physics2D.Raycast(attackStartPoint.position, direction, distance, LayerMask.GetMask("Enemy"));
+
+        if (hit.collider != null)
+        {
+            // TODO hit the enemy
         }
     }
 }
