@@ -123,23 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &377223602 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4373829809739368388, guid: caea00a34cef1854d9a9c4e01ffe2ed8, type: 3}
-  m_PrefabInstance: {fileID: 4373829809445043830}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &377223609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 377223602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd89373d238e204ea0e65f72b01bdc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,10 +260,6 @@ PrefabInstance:
     - target: {fileID: 4373829809739368388, guid: caea00a34cef1854d9a9c4e01ffe2ed8, type: 3}
       propertyPath: m_Name
       value: Spartan
-      objectReference: {fileID: 0}
-    - target: {fileID: 4373829809739368398, guid: caea00a34cef1854d9a9c4e01ffe2ed8, type: 3}
-      propertyPath: acceleration
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caea00a34cef1854d9a9c4e01ffe2ed8, type: 3}

@@ -33,4 +33,23 @@ public class PlayerController : MonoBehaviour
         }
         
     }
+
+    public void OnRaiseShield(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            foreach (PlayerInterface spartan in spartans)
+            {
+                spartan.SetStanceInput(true);
+            }
+        }
+
+        if (context.canceled)
+        {
+            foreach (PlayerInterface spartan in spartans)
+            {
+                spartan.SetStanceInput(false);
+            }
+        }
+    }
 }
