@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,10 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private int waveSizeIncrement = 1;
     private float waveTimer = 0.0f;
 
+    private int currentWave = 0;
+
+    [SerializeField] float spawnOffset = 1.0f;
+
     private void Start()
     {
         currentWaveSize = startingWaveSize;
@@ -28,9 +33,16 @@ public class SpawnManager : MonoBehaviour
 
         if (waveTimer > waveInterval)
         {
-            waveTimer = 0.0f;
-            SpawnWave();
+            StartNextWave();
         }
+    }
+
+    private void StartNextWave()
+    {
+        waveTimer = 0.0f;
+        SpawnWave();
+        currentWave++;
+        IncreaseWaveDifficulty();
     }
 
     private void SpawnWave()
@@ -38,12 +50,12 @@ public class SpawnManager : MonoBehaviour
         int randSpawnMode = UnityEngine.Random.Range(0, spawners.Count + 1);
 
         // Spawn randomly
-        if (randSpawnMode > spawners.Count)
+        if (randSpawnMode >= spawners.Count)
         {
             for (int i = 0; i < currentWaveSize; i++)
             {
                 int randomSpawner = UnityEngine.Random.Range(0, spawners.Count);
-                spawners[randomSpawner].Spawn(enemyPrefabs[0]);
+                spawners[randomSpawner].Spawn(enemyPrefabs[0], spawnOffset * i);
             }
         }
         // Spawn together
@@ -52,8 +64,23 @@ public class SpawnManager : MonoBehaviour
             int randomSpawner = UnityEngine.Random.Range(0, spawners.Count);
             for (int i = 0; i < currentWaveSize; i++)
             {
-                spawners[randomSpawner].Spawn(enemyPrefabs[0]);
+                spawners[randomSpawner].Spawn(enemyPrefabs[0], spawnOffset * i);
             }
         }
+    }
+
+    private void IncreaseWaveDifficulty()
+    {
+        nWaveCounter++;
+        if (nWaveCounter == increaseWaveSizeEveryNWaves)
+        {
+            nWaveCounter = 0;
+            currentWaveSize += waveSizeIncrement;
+        }
+    }
+
+    public int GetCurrentWave()
+    {
+        return currentWave;
     }
 }

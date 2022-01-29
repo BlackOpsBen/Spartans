@@ -6,8 +6,10 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] private Transform characterParent;
 
-    public void Spawn(GameObject prefab)
+    public void Spawn(GameObject prefab, float offset)
     {
-        Instantiate(prefab, transform.position, Quaternion.identity, characterParent);
+        Vector3 position = new Vector3(transform.position.x + offset * Mathf.Sign(transform.position.x), transform.position.y);
+
+        Instantiate(prefab, position, Quaternion.identity, characterParent);
     }
 }
