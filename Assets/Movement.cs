@@ -33,6 +33,18 @@ public class Movement : MonoBehaviour
         UpdateSpeed();
         PerformMove();
         UpdateAnimation();
+
+        if (isPlayer)
+        {
+            if (stance.GetIsRaising())
+            {
+                UpdateGameObjectFacing();
+            }
+        }
+        else
+        {
+            UpdateGameObjectFacing();
+        }
     }
 
     private void UpdateSpeed()
@@ -60,17 +72,17 @@ public class Movement : MonoBehaviour
     {
         moveDirection = direction;
 
-        if (isPlayer)
-        {
-            if (stance.GetIsRaising())
-            {
-                UpdateGameObjectFacing();
-            }
-        }
-        else
-        {
-            UpdateGameObjectFacing();
-        }
+        //if (isPlayer)
+        //{
+        //    if (stance.GetIsRaising())
+        //    {
+        //        UpdateGameObjectFacing();
+        //    }
+        //}
+        //else
+        //{
+        //    UpdateGameObjectFacing();
+        //}
     }
 
     private void UpdateGameObjectFacing()
