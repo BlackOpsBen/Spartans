@@ -12,10 +12,18 @@ public class Movement : MonoBehaviour
 
     private float speed = 0.0f;
 
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     private void Update()
     {
         UpdateSpeed();
         PerformMove();
+        UpdateAnimation();
     }
 
     private void UpdateSpeed()
@@ -34,8 +42,22 @@ public class Movement : MonoBehaviour
         transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y);
     }
 
+    private void UpdateAnimation()
+    {
+        animator.SetBool("isRunning", Mathf.Abs(speed) > 0.2f);
+    }
+
     public void SetMoveDirection(float direction)
     {
         moveDirection = direction;
+
+        if (direction == -1.0f)
+        {
+            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        }
+        else if (direction == 1.0f)
+        {
+            transform.localScale = Vector3.one;
+        }
     }
 }
