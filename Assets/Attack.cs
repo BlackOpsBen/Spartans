@@ -84,7 +84,7 @@ public class Attack : MonoBehaviour
 
         if (hit.collider != null)
         {
-            // TODO hit the enemy
+            Debug.Log("Hit " + hit.transform.gameObject.name);
         }
     }
 }

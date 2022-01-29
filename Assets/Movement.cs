@@ -16,9 +16,15 @@ public class Movement : MonoBehaviour
 
     private Animator animator;
 
+    private bool isPlayer = false;
+
     private void Start()
     {
-        stance = GetComponent<Stance>();
+        if (GetComponent<PlayerInterface>())
+        {
+            stance = GetComponent<Stance>();
+            isPlayer = true;
+        }
         animator = GetComponent<Animator>();
     }
 
@@ -54,7 +60,14 @@ public class Movement : MonoBehaviour
     {
         moveDirection = direction;
 
-        if (stance.GetIsRaising())
+        if (isPlayer)
+        {
+            if (stance.GetIsRaising())
+            {
+                UpdateGameObjectFacing();
+            }
+        }
+        else
         {
             UpdateGameObjectFacing();
         }
