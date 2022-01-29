@@ -110,6 +110,12 @@ TextureImporter:
   - first:
       213: 6813553822765877458
     second: arrow_small
+  - first:
+      213: -5082647686934749709
+    second: spartan_counter
+  - first:
+      213: -2423230811885516303
+    second: kill_counter
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -998,6 +1004,48 @@ TextureImporter:
       bones: []
       spriteID: 2d807ff1a1b9e8e50800000000000000
       internalID: 6813553822765877458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartan_counter
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 16
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd1bc59bdec679b0800000000000000
+      internalID: -5082647686934749709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kill_counter
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 14
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f948c85a64fe5ed0800000000000000
+      internalID: -2423230811885516303
       vertices: []
       indices: 
       edges: []

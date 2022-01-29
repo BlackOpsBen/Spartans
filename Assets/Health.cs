@@ -34,6 +34,10 @@ public class Health : MonoBehaviour
         {
             PlayerController.Instance.RemoveDeadSpartan(playerInterface);
         }
+        else
+        {
+            KillCounter.Instance.IncreaseKills();
+        }
 
         Destroy(gameObject);
     }
