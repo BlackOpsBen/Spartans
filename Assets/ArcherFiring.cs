@@ -16,6 +16,7 @@ public class ArcherFiring : MonoBehaviour
     [SerializeField] private float arrowFallDelayMax = 1.5f;
 
     private Transform target;
+    private Vector3 targetLastPos;
 
     [SerializeField] private float maxShotDeviation = 5.0f;
 
@@ -63,6 +64,7 @@ public class ArcherFiring : MonoBehaviour
     private void PickTarget()
     {
         target = playerController.GetRandomSpartan();
+        targetLastPos = target.position;
     }
 
     private IEnumerator SpawnArrow()
@@ -75,6 +77,13 @@ public class ArcherFiring : MonoBehaviour
 
         float randDeviation = UnityEngine.Random.Range(-maxShotDeviation, maxShotDeviation);
 
-        arrow.transform.position = new Vector3(target.position.x + randDeviation, arrowSpawnYPos, 0.0f);
+        if (target != null)
+        {
+            arrow.transform.position = new Vector3(target.position.x + randDeviation, arrowSpawnYPos, 0.0f);
+        }
+        else
+        {
+            arrow.transform.position = new Vector3(targetLastPos.x + randDeviation, arrowSpawnYPos, 0.0f);
+        }
     }
 }

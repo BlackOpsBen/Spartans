@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    public GameObject target;
+    private Vector3 target;
     public float lerpSpeed = 5.0f;
 
     private void Update()
     {
-        float lerpXPos = Mathf.Lerp(transform.position.x, target.transform.position.x, Time.deltaTime * lerpSpeed);
-        transform.position = new Vector3(lerpXPos, transform.position.y, transform.position.z);
+        Bounds bounds = new Bounds();
+        foreach (PlayerInterface spartan in PlayerController.Instance.GetSpartans())
+        {
+            bounds.Encapsulate(spartan.transform.position);
+        }
+
+        transform.position = new Vector3(Mathf.Lerp(transform.position.x, bounds.center.x, Time.deltaTime * lerpSpeed), transform.position.y, transform.position.z);
     }
 }

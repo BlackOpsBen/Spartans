@@ -152,7 +152,12 @@ public class EnemyAttack : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.Log("Hit " + hit.transform.gameObject.name);
+            Health spartanHealth = hit.transform.GetComponent<Health>();
+
+            if (spartanHealth != null)
+            {
+                spartanHealth.Hit();
+            }
         }
     }
 }
