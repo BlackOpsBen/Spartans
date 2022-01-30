@@ -649,42 +649,52 @@ MonoBehaviour:
         volume: 1
         pitch: 1
         source: {fileID: 0}
-    - name: Footsteps
+    - name: March
       soundOptions:
-      - name: Footstep0
-        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+      - name: March0
+        clip: {fileID: 8300000, guid: 46cde2e36cbd9447093386fb35b2b532, type: 3}
         volume: 0.5
         pitch: 1
         source: {fileID: 0}
-      - name: Footstep1
-        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+      - name: March1
+        clip: {fileID: 8300000, guid: 5d61e00abc2654e538cc095dc2ccccea, type: 3}
         volume: 0.5
-        pitch: 0.5
+        pitch: 1
         source: {fileID: 0}
-      - name: Footstep2
-        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+      - name: March2
+        clip: {fileID: 8300000, guid: aa26d2fa0cb7148d4aaa1f1138cb7737, type: 3}
         volume: 0.5
-        pitch: 1.5
+        pitch: 1
         source: {fileID: 0}
-      - name: Footstep3
-        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+      - name: March3
+        clip: {fileID: 8300000, guid: ca37d0aebc0b94147bf1c6e31f07a697, type: 3}
         volume: 0.5
-        pitch: 2
+        pitch: 1
         source: {fileID: 0}
-      - name: Footstep4
-        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+      - name: March4
+        clip: {fileID: 8300000, guid: 97f331f317cdc447191ba33c62c60635, type: 3}
         volume: 0.5
-        pitch: 2.5
+        pitch: 1
         source: {fileID: 0}
-      - name: Footstep5
-        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+      - name: March5
+        clip: {fileID: 8300000, guid: 8aa3a4cd30c3d4a7fbd870070ab343a1, type: 3}
         volume: 0.5
-        pitch: 3
+        pitch: 1
         source: {fileID: 0}
-      - name: Footstep6
-        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+      - name: March6
+        clip: {fileID: 8300000, guid: 3f53fb2918ff649c6a74e3df8eb98ece, type: 3}
         volume: 0.5
-        pitch: 0.1
+        pitch: 1
+        source: {fileID: 0}
+      - name: March7
+        clip: {fileID: 8300000, guid: ec0bb012240c7464ebbc2e412729fce3, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: March8
+        clip: {fileID: 8300000, guid: 48e0c1b4fbb0a448fb6a67e5317c9179, type: 3}
+        volume: 0.5
+        pitch: 1
         source: {fileID: 0}
   - name: Dialog
     soundCategories:
