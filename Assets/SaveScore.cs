@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SaveScore : MonoBehaviour
 {
-    [SerializeField] private TMP_InputField nameInput;
+    [SerializeField] private InputField nameInput;
     [SerializeField] private Button submitButton;
     [SerializeField] private GameObject scoreboardUI;
 

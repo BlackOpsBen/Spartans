@@ -42,10 +42,10 @@ public class HighScores : MonoBehaviour
 
         if (string.IsNullOrEmpty(www.error))
         {
-            print("Upload Successful");
+            //print("Upload Successful");
             DownloadScores();
         }
-        else print("Error uploading" + www.error);
+        //else print("Error uploading" + www.error);
     }
 
     public void DownloadScores()
@@ -63,7 +63,7 @@ public class HighScores : MonoBehaviour
             OrganizeInfo(www.text);
             myDisplay.SetScoresToMenu(scoreList);
         }
-        else print("Error uploading" + www.error);
+        //else print("Error uploading" + www.error);
     }
 
     void OrganizeInfo(string rawData) //Divides Scoreboard info by new lines
