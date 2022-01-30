@@ -2207,14 +2207,6 @@ PrefabInstance:
       propertyPath: characterParent
       value: 
       objectReference: {fileID: 1934294801}
-    - target: {fileID: 6662759081954943888, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
-      propertyPath: waveInterval
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6662759081954943888, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
-      propertyPath: increaseWaveSizeEveryNWaves
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6662759083746313792, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
       propertyPath: m_RootOrder
       value: 2
