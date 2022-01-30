@@ -71,6 +71,8 @@ public class Attack : MonoBehaviour
         {
             isAttacking = true;
             isReady = false;
+
+            AudioManager.Instance.PlaySFX("SpearAttack");
         }
     }
 

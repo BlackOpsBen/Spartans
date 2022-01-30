@@ -3903,6 +3903,11 @@ MonoBehaviour:
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
+  - name: SpearAttack
+    clip: {fileID: 8300000, guid: 8d9c66d82cf05dc4ea5c21964e92a65e, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
   soundGroups:
   - name: SFX
     soundCategories:
