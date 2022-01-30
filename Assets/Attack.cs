@@ -93,6 +93,8 @@ public class Attack : MonoBehaviour
             if (enemyHealth != null)
             {
                 enemyHealth.Hit();
+
+                AudioManager.Instance.PlaySFX("SpearHit");
             }
         }
     }

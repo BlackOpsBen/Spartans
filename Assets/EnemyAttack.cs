@@ -138,6 +138,8 @@ public class EnemyAttack : MonoBehaviour
     {
         isAnticipating = true;
         isReady = false;
+
+        AudioManager.Instance.PlaySFX("SwordAttack");
     }
 
     private void CheckForHit()
@@ -157,6 +159,8 @@ public class EnemyAttack : MonoBehaviour
             if (spartanHealth != null)
             {
                 spartanHealth.Hit();
+
+                AudioManager.Instance.PlaySFX("SwordHit");
             }
 
             if (hit.transform.CompareTag("Shield"))
