@@ -58,5 +58,9 @@ public class ArrowFall : MonoBehaviour
         {
             AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_SHIELD_HIT, false);
         }
+        else
+        {
+            AudioManager.Instance.PlaySFX("ArrowHitGround");
+        }
     }
 }

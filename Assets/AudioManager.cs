@@ -44,6 +44,11 @@ public class AudioManager : MonoBehaviour
         CreateAudioSources(ref musicCategory.soundOptions);
     }
 
+    private void Start()
+    {
+        StartMusic();
+    }
+
     private void SingletonPattern()
     {
         if (Instance != null)
@@ -100,6 +105,15 @@ public class AudioManager : MonoBehaviour
         Sound s = Array.Find(SFX, sound => sound.name == name);
         s.source.loop = false;
         s.source.Stop();
+    }
+
+    private void StartMusic()
+    {
+        int rand = UnityEngine.Random.Range(0, musicCategory.soundOptions.Length);
+
+        Sound s = musicCategory.soundOptions[rand];
+        s.source.loop = true;
+        s.source.Play();
     }
 
     public void StopMusic()

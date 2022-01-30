@@ -34,13 +34,15 @@ public class Health : MonoBehaviour
         {
             PlayerController.Instance.RemoveDeadSpartan(playerInterface);
 
-            AudioManager.Instance.PlaySoundFromGroup(1, AudioManager.DIALOG_SPARTAN_DEATH, false);
+            AudioManager.Instance.PlaySoundFromGroup(1, AudioManager.DIALOG_SPARTAN_DEATH, true);
         }
         else
         {
             KillCounter.Instance.IncreaseKills();
 
             AudioManager.Instance.PlaySoundFromGroup(1, AudioManager.DIALOG_ENEMY_DEATH, false);
+
+            AudioManager.Instance.PlaySoundFromGroup(1, AudioManager.DIALOG_KILL, true);
         }
 
         Destroy(gameObject);

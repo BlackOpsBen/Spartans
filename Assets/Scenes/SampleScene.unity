@@ -3887,7 +3887,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3742275f51b0646baece57fa80b48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SFX: []
+  SFX:
+  - name: ArrowHitGround
+    clip: {fileID: 8300000, guid: 52bbc52227d4e6c45befb21eb925d29f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: BowPull
+    clip: {fileID: 8300000, guid: 9bcd97bad06bff8429f21a7bb0b1cb90, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: BowRelease
+    clip: {fileID: 8300000, guid: c7375c7e882adc946a1a633b55f103d9, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
   soundGroups:
   - name: SFX
     soundCategories:
@@ -4121,8 +4136,28 @@ MonoBehaviour:
         pitch: 1
         source: {fileID: 0}
   musicCategory:
-    name: 
-    soundOptions: []
+    name: MusicOptions
+    soundOptions:
+    - name: Music0
+      clip: {fileID: 8300000, guid: a113c113e13aeea4e809fffafbfb8bd4, type: 3}
+      volume: 1
+      pitch: 1
+      source: {fileID: 0}
+    - name: Music1
+      clip: {fileID: 8300000, guid: 0e6e83a379cdc2148b45c58f3f422d5d, type: 3}
+      volume: 1
+      pitch: 1
+      source: {fileID: 0}
+    - name: Music2
+      clip: {fileID: 8300000, guid: 2f521f7f721ad18408721183ad0fffe4, type: 3}
+      volume: 1
+      pitch: 1
+      source: {fileID: 0}
+    - name: Music3
+      clip: {fileID: 8300000, guid: 38959c3cc3ea114459e2cd0dfcbe7ea5, type: 3}
+      volume: 1
+      pitch: 1
+      source: {fileID: 0}
 --- !u!1 &1400685686
 GameObject:
   m_ObjectHideFlags: 0

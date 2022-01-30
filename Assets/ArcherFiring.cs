@@ -48,6 +48,8 @@ public class ArcherFiring : MonoBehaviour
             timer = 0.0f;
 
             animator.SetTrigger("Fire");
+
+            AudioManager.Instance.PlaySFX("BowPull");
         }
     }
 
@@ -64,6 +66,8 @@ public class ArcherFiring : MonoBehaviour
         {
             PickTarget();
         }
+
+        AudioManager.Instance.PlaySFX("BowRelease");
 
         StartCoroutine(SpawnArrow());
     }
