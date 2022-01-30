@@ -4,17 +4,30 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    private Vector3 target;
     public float lerpSpeed = 5.0f;
+
+    private float xMedian;
 
     private void Update()
     {
-        Bounds bounds = new Bounds();
-        foreach (PlayerInterface spartan in PlayerController.Instance.GetSpartans())
+        List<PlayerInterface> spartans = PlayerController.Instance.GetSpartans();
+
+        if (spartans.Count > 0)
         {
-            bounds.Encapsulate(spartan.transform.position);
+            xMedian = 0.0f;
+
+            List<float> xPoints = new List<float>();
+
+            foreach (PlayerInterface spartan in spartans)
+            {
+                xPoints.Add(spartan.transform.position.x);
+            }
+
+            float xMax = Mathf.Max(xPoints.ToArray());
+            float xMin = Mathf.Min(xPoints.ToArray());
+            xMedian = xMax - ((xMax - xMin) / 2);
         }
 
-        transform.position = new Vector3(Mathf.Lerp(transform.position.x, bounds.center.x, Time.deltaTime * lerpSpeed), transform.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.Lerp(transform.position.x, xMedian, Time.deltaTime * lerpSpeed), transform.position.y, transform.position.z);
     }
 }

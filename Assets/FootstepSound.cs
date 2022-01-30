@@ -6,6 +6,6 @@ public class FootstepSound : MonoBehaviour
 {
     public void PlayFootStepSound()
     {
-        AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_FOOTSTEPS, false);
+        AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_MARCH, false);
     }
 }

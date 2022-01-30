@@ -583,7 +583,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
   - name: SpearAttack
-    clip: {fileID: 8300000, guid: 8d9c66d82cf05dc4ea5c21964e92a65e, type: 3}
+    clip: {fileID: 8300000, guid: 8a42dba9086a84c47a63790e07569a7a, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
@@ -3464,6 +3464,10 @@ PrefabInstance:
       propertyPath: characterParent
       value: 
       objectReference: {fileID: 1934294801}
+    - target: {fileID: 6662759081954943888, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
+      propertyPath: waveInterval
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 6662759083746313792, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3508,6 +3512,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6662759083746313795, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1205033463}
     - target: {fileID: 6662759083746313799, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
       propertyPath: m_Name
       value: Pixel Perfect Camera
