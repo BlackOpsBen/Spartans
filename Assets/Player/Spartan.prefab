@@ -51,6 +51,7 @@ GameObject:
   - component: {fileID: 6898142540968125360}
   - component: {fileID: 4200603575562634031}
   - component: {fileID: 5279648932644205783}
+  - component: {fileID: 4961471777443845639}
   m_Layer: 7
   m_Name: Spartan
   m_TagString: Spartan
@@ -296,6 +297,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathPFX: {fileID: 7517998975772988463, guid: 17dc849f6904b4241b218ba18af7be9f, type: 3}
   startingHP: 1
+--- !u!114 &4961471777443845639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4373829809739368388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e028d1c16949145b0a98d7612c7044d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4373829809913919253
 GameObject:
   m_ObjectHideFlags: 0

@@ -64,6 +64,8 @@ public class EnemyAttack : MonoBehaviour
                 isAnticipating = false;
                 isAttacking = true;
                 anticipationTimer = 0.0f;
+
+                AudioManager.Instance.PlaySFX("SwordAttack");
             }
         }
     }
@@ -138,8 +140,6 @@ public class EnemyAttack : MonoBehaviour
     {
         isAnticipating = true;
         isReady = false;
-
-        AudioManager.Instance.PlaySFX("SwordAttack");
     }
 
     private void CheckForHit()

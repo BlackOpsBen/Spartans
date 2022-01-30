@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 {
     public const int SFX_SHIELD_HIT = 0;
     public const int SFX_SHUFFLE = 1;
+    public const int SFX_FOOTSTEPS = 2;
 
     public const int DIALOG_HAOO = 0;
     public const int DIALOG_SPARTAN_DEATH = 1;
@@ -114,11 +115,6 @@ public class AudioManager : MonoBehaviour
         Sound s = musicCategory.soundOptions[rand];
         s.source.loop = true;
         s.source.Play();
-    }
-
-    public void StopMusic()
-    {
-        // TODO
     }
 
     public void PlaySoundFromGroup(int groupIndex, int SOUND_CATEGORY, bool oneAtATime)

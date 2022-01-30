@@ -602,11 +602,6 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
-  - name: Footstep
-    clip: {fileID: 8300000, guid: b4e302511645c0641b05d809ec34d57d, type: 3}
-    volume: 1
-    pitch: 1
-    source: {fileID: 0}
   soundGroups:
   - name: SFX
     soundCategories:
@@ -653,6 +648,43 @@ MonoBehaviour:
         clip: {fileID: 8300000, guid: dca9c291d306d504583d9e22ea362e07, type: 3}
         volume: 1
         pitch: 1
+        source: {fileID: 0}
+    - name: Footsteps
+      soundOptions:
+      - name: Footstep0
+        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: Footstep1
+        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+        volume: 0.5
+        pitch: 0.5
+        source: {fileID: 0}
+      - name: Footstep2
+        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+        volume: 0.5
+        pitch: 1.5
+        source: {fileID: 0}
+      - name: Footstep3
+        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+        volume: 0.5
+        pitch: 2
+        source: {fileID: 0}
+      - name: Footstep4
+        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+        volume: 0.5
+        pitch: 2.5
+        source: {fileID: 0}
+      - name: Footstep5
+        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+        volume: 0.5
+        pitch: 3
+        source: {fileID: 0}
+      - name: Footstep6
+        clip: {fileID: 8300000, guid: 81e69fdf373dc460a9cda381a597164a, type: 3}
+        volume: 0.5
+        pitch: 0.1
         source: {fileID: 0}
   - name: Dialog
     soundCategories:
@@ -869,6 +901,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1934294801}
     m_Modifications:
+    - target: {fileID: 4373829809739368384, guid: caea00a34cef1854d9a9c4e01ffe2ed8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1211998406744890917, guid: f69c92371e537b64a98c6b453447ee61, type: 3}
     - target: {fileID: 4373829809739368385, guid: caea00a34cef1854d9a9c4e01ffe2ed8, type: 3}
       propertyPath: m_RootOrder
       value: 0
