@@ -55,6 +55,8 @@ public class PlayerController : MonoBehaviour
             foreach (PlayerInterface spartan in spartans)
             {
                 spartan.SetStanceInput(true);
+
+                AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_SHUFFLE, false);
             }
         }
 
@@ -63,6 +65,8 @@ public class PlayerController : MonoBehaviour
             foreach (PlayerInterface spartan in spartans)
             {
                 spartan.SetStanceInput(false);
+
+                AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_SHUFFLE, false);
             }
         }
     }

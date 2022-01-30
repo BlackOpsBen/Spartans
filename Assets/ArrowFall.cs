@@ -53,5 +53,10 @@ public class ArrowFall : MonoBehaviour
         {
             spartanHealth.Hit();
         }
+
+        if (collision.gameObject.CompareTag("Shield"))
+        {
+            AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_SHIELD_HIT, false);
+        }
     }
 }

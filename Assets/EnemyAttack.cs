@@ -158,6 +158,11 @@ public class EnemyAttack : MonoBehaviour
             {
                 spartanHealth.Hit();
             }
+
+            if (hit.transform.CompareTag("Shield"))
+            {
+                AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_SHIELD_HIT, false);
+            }
         }
     }
 }
