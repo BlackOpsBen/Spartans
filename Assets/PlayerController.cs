@@ -67,6 +67,8 @@ public class PlayerController : MonoBehaviour
                 spartan.SetStanceInput(false);
 
                 AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_SHUFFLE, false);
+
+                AudioManager.Instance.PlaySoundFromGroup(1, AudioManager.DIALOG_HAOO, false);
             }
         }
     }

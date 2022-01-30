@@ -3935,6 +3935,191 @@ MonoBehaviour:
         volume: 1
         pitch: 1
         source: {fileID: 0}
+  - name: Dialog
+    soundCategories:
+    - name: Haoos
+      soundOptions:
+      - name: Haoo0
+        clip: {fileID: 8300000, guid: 5a1cd823177c10444afd509f74ddca19, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo1
+        clip: {fileID: 8300000, guid: 067335e953e723b43801ff2273f05067, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo2
+        clip: {fileID: 8300000, guid: d163a4d866fca884492194156a131c04, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo3
+        clip: {fileID: 8300000, guid: 1a1623f7141f0344ca921314ef2177f3, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo4
+        clip: {fileID: 8300000, guid: 769665d066f609741a2c80777117b866, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo5
+        clip: {fileID: 8300000, guid: 695c76e312124e0448f08ebe3b3da652, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo6
+        clip: {fileID: 8300000, guid: c31e97ddf0687a546b71b1565b21e44f, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+    - name: SpartanDeath
+      soundOptions:
+      - name: Death0
+        clip: {fileID: 8300000, guid: 67f6dbf68dc490f4891e9e87b74263f6, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death1
+        clip: {fileID: 8300000, guid: 903fca54f55f5334eaf6deb4f99625f3, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death2
+        clip: {fileID: 8300000, guid: 1b141a67e7d0d0f419bb4568447f627b, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death3
+        clip: {fileID: 8300000, guid: 75d4a6b93dd54604190413152377e14f, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death4
+        clip: {fileID: 8300000, guid: 2a4e2a23b97832d4dbb15e3c4853f5ba, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death5
+        clip: {fileID: 8300000, guid: e96a43aa3bd7ebd4693adbd2394b28e3, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death6
+        clip: {fileID: 8300000, guid: 8a58e326d4d1fe04997b4412f55e50e2, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death7
+        clip: {fileID: 8300000, guid: f6c5e8e2f707b3947b266647fc1ddd43, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death8
+        clip: {fileID: 8300000, guid: e81bd1d948e2fc544a9fcfa2464cf132, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death9
+        clip: {fileID: 8300000, guid: 687b2a8c5026aa14e86474d40b76abe3, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death10
+        clip: {fileID: 8300000, guid: bbfd136ec9d99d149ace3f7dfdb1d2c0, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+    - name: EnemyDeath
+      soundOptions:
+      - name: Death0
+        clip: {fileID: 8300000, guid: e032804ca7101a746a4dfc7079c1f68a, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death1
+        clip: {fileID: 8300000, guid: 0f35011366ab77146bc0d65fc0ef59e3, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death2
+        clip: {fileID: 8300000, guid: 61d24e5005160c64c83e7e43fd94c231, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death3
+        clip: {fileID: 8300000, guid: 2af9e9ba5c4fc574cab9b77091b4af70, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death4
+        clip: {fileID: 8300000, guid: 0c80f0f36c6850946bb5daf4e3d93918, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death5
+        clip: {fileID: 8300000, guid: 7fb8ede10d82d024095f320e1a201e47, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death6
+        clip: {fileID: 8300000, guid: 87e3ebefb99ad6942b6ed29ae65ec049, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+    - name: Kill
+      soundOptions:
+      - name: Kill0
+        clip: {fileID: 8300000, guid: be6e725a5d1e6804fb9fb844bf5e4a72, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill1
+        clip: {fileID: 8300000, guid: 1a9abc9d7eb5e0f4ba1ead4eca58878a, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill2
+        clip: {fileID: 8300000, guid: 8e387d04e23a84447a67609fdf66ab3d, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill3
+        clip: {fileID: 8300000, guid: 6874d9a363fd3dc40a9485730880febc, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill4
+        clip: {fileID: 8300000, guid: cdb8e097285aaa343af7ba132727c46e, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill5
+        clip: {fileID: 8300000, guid: b228b8332724de44ab20519eba99f968, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill6
+        clip: {fileID: 8300000, guid: 00b771bdd094b2a4984560c616ea3884, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill7
+        clip: {fileID: 8300000, guid: 418539c8f05fec5459cfb783b32cc6ad, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill8
+        clip: {fileID: 8300000, guid: 5bc5a6b80b346ae449ce436045abfe62, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill9
+        clip: {fileID: 8300000, guid: 989661946c0229845b7b464836164428, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
   musicCategory:
     name: 
     soundOptions: []
