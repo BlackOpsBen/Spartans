@@ -56,13 +56,13 @@ public class LeaderboardController : MonoBehaviour
     {
         LootLockerSDKManager.SubmitScore(memberID.text, KillCounter.Instance.GetKills(), ID, (response) =>
         {
-            if (response.success)
+            if (response.statusCode == 200)
             {
                 Debug.Log("Submit Success");
             }
             else
             {
-                Debug.Log("Submit Failed");
+                Debug.Log("Submit Failed: " + response.Error);
             }
         });
     }
