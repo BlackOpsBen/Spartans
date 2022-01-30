@@ -93,5 +93,10 @@ public class PlayerController : MonoBehaviour
     public void RemoveDeadSpartan(PlayerInterface deadSpartan)
     {
         spartans.Remove(deadSpartan);
+
+        if (spartans.Count == 0)
+        {
+            GameManager.Instance.GameOver();
+        }
     }
 }
