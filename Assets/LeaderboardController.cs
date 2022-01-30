@@ -1,13 +1,18 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using LootLocker.Requests;
+using System;
+using TMPro;
 
 public class LeaderboardController : MonoBehaviour
 {
     public InputField memberID;
     public int ID;
     int maxScores = 10;
-    public Text[] entries;
+    public TextMeshProUGUI[] entryName, entryScore;
+
+    public GameObject leaderboardUI;
 
     private void Start()
     {
@@ -34,14 +39,16 @@ public class LeaderboardController : MonoBehaviour
 
                 for (int i = 0; i < scores.Length; i++)
                 {
-                    entries[i].text = (scores[i].rank + ".   " + scores[i].score);
+                    entryName[i].text = scores[i].rank + ". " + scores[i].member_id;
+                    entryScore[i].text = scores[i].score.ToString();
                 }
 
                 if (scores.Length < maxScores)
                 {
                     for (int i = scores.Length; i < maxScores; i++)
                     {
-                        entries[i].text = (i + 1).ToString() + ".   -";
+                        entryName[i].text = (i + 1).ToString() + ".";
+                        entryScore[i].text = "...";
                     }
                 }
             }
@@ -52,7 +59,16 @@ public class LeaderboardController : MonoBehaviour
         });
     }
 
-    public void SubmitScore()
+    // Called by Submit Button
+    public void OnSubmitScore()
+    {
+        SubmitScore();
+        leaderboardUI.SetActive(true);
+        ShowScores();
+        gameObject.SetActive(false);
+    }
+
+    private void SubmitScore()
     {
         LootLockerSDKManager.SubmitScore(memberID.text, KillCounter.Instance.GetKills(), ID, (response) =>
         {
