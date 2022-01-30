@@ -47,11 +47,16 @@ public class ArrowFall : MonoBehaviour
 
         transform.parent = collision.gameObject.transform;
 
-        Health spartanHealth = collision.GetComponent<Health>();
+        Stance spartanStance = collision.GetComponent<Stance>();
 
-        if (spartanHealth != null)
+        if (spartanStance != null && !spartanStance.GetIsUp())
         {
-            spartanHealth.Hit();
+            Health spartanHealth = collision.GetComponent<Health>();
+
+            if (spartanHealth != null)
+            {
+                spartanHealth.Hit();
+            }
         }
 
         if (collision.gameObject.CompareTag("Shield"))

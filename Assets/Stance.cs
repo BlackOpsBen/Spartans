@@ -55,4 +55,9 @@ public class Stance : MonoBehaviour
     {
         return isRaising;
     }
+
+    public bool GetIsUp()
+    {
+        return raisedPercent > 0.5f;
+    }
 }
