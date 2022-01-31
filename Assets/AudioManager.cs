@@ -29,6 +29,8 @@ public class AudioManager : MonoBehaviour
     private bool soundIsPlaying = false;
     private float soundDuration = 0f;
 
+    private Sound currentMusic;
+
     private void Awake()
     {
         SingletonPattern();
@@ -74,6 +76,11 @@ public class AudioManager : MonoBehaviour
         {
             soundDuration -= Time.deltaTime;
         }
+
+        if (currentMusic.source.isPlaying == false)
+        {
+            StartMusic();
+        }
     }
 
     private void CreateAudioSources(ref Sound[] sounds)
@@ -115,8 +122,10 @@ public class AudioManager : MonoBehaviour
         int rand = UnityEngine.Random.Range(0, musicCategory.soundOptions.Length);
 
         Sound s = musicCategory.soundOptions[rand];
-        s.source.loop = true;
+        //s.source.loop = true;
         s.source.Play();
+
+        currentMusic = s;
     }
 
     public void PlaySoundFromGroup(int groupIndex, int SOUND_CATEGORY, bool oneAtATime)
