@@ -13,6 +13,7 @@ public class LeaderboardController : MonoBehaviour
     public TextMeshProUGUI[] entryName, entryScore;
 
     public GameObject leaderboardUI;
+    public GameObject submitUI;
 
     private void Start()
     {
@@ -65,7 +66,7 @@ public class LeaderboardController : MonoBehaviour
         SubmitScore();
         leaderboardUI.SetActive(true);
         ShowScores();
-        gameObject.SetActive(false);
+        submitUI.SetActive(false);
     }
 
     private void SubmitScore()
