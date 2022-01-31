@@ -12,6 +12,8 @@ public class ArrowFall : MonoBehaviour
     private float despawnTime = 5.0f;
     private float timer = 0.0f;
 
+    [SerializeField] private ParticleSystem hitPFX;
+
     private void Update()
     {
         MoveArrow();
@@ -67,5 +69,7 @@ public class ArrowFall : MonoBehaviour
         {
             AudioManager.Instance.PlaySFX("ArrowHitGround");
         }
+
+        hitPFX.Play();
     }
 }
