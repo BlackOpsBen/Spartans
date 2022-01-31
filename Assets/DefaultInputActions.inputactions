@@ -132,6 +132,17 @@
                 },
                 {
                     "name": "",
+                    "id": "ac0694f2-00a7-49fd-9a04-e356d1c3bcc5",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "RaiseShield",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e4750189-5e7b-41b5-8254-7c8426eb5c4a",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -156,6 +167,17 @@
                     "name": "",
                     "id": "c8cb6789-6f58-4397-9dfb-38d796af4b32",
                     "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33d0fa0b-af19-474d-a0d8-bb2bc04a789d",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
