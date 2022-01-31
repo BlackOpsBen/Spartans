@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Transform characterParent;
-
-    public void Spawn(GameObject prefab, float offset)
+    public void Spawn(GameObject prefab, float offset, Transform parent)
     {
         Vector3 position = new Vector3(transform.position.x + offset * Mathf.Sign(transform.localPosition.x), transform.position.y);
 
-        Instantiate(prefab, position, Quaternion.identity, characterParent);
+        Instantiate(prefab, position, Quaternion.identity, parent);
     }
 }

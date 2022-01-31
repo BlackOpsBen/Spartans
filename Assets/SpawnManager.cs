@@ -7,15 +7,19 @@ public class SpawnManager : MonoBehaviour
 {
     private List<Spawner> spawners = new List<Spawner>();
 
+    [SerializeField] private Transform enemiesParent;
+
     [SerializeField] private List<GameObject> enemyPrefabs = new List<GameObject>();
 
-    [SerializeField] private float waveInterval = 5.0f;
+    [SerializeField] private float waveInterval = 10.0f;
     [SerializeField] private int startingWaveSize = 5;
     private int currentWaveSize = 0;
     [SerializeField] private int increaseWaveSizeEveryNWaves = 1;
     private int nWaveCounter = 0;
     [SerializeField] private int waveSizeIncrement = 1;
-    private float waveTimer = 0.0f;
+    private float waveTimer = float.MaxValue;
+    [SerializeField] private float minWaveDelay = 3.0f;
+    private bool minDelayTriggered = false;
 
     private int currentWave = 0;
 
@@ -23,6 +27,7 @@ public class SpawnManager : MonoBehaviour
 
     private void Start()
     {
+        waveTimer = waveInterval - minWaveDelay;
         currentWaveSize = startingWaveSize;
         spawners.AddRange(FindObjectsOfType<Spawner>());
     }
@@ -35,6 +40,11 @@ public class SpawnManager : MonoBehaviour
         {
             StartNextWave();
         }
+        else if (!minDelayTriggered && enemiesParent.childCount == 0 && (waveInterval - waveTimer) > minWaveDelay)
+        {
+            waveTimer = waveInterval - minWaveDelay;
+            minDelayTriggered = true;
+        }
     }
 
     private void StartNextWave()
@@ -43,6 +53,7 @@ public class SpawnManager : MonoBehaviour
         SpawnWave();
         currentWave++;
         IncreaseWaveDifficulty();
+        minDelayTriggered = false;
     }
 
     private void SpawnWave()
@@ -55,7 +66,7 @@ public class SpawnManager : MonoBehaviour
             for (int i = 0; i < currentWaveSize; i++)
             {
                 int randomSpawner = UnityEngine.Random.Range(0, spawners.Count);
-                spawners[randomSpawner].Spawn(enemyPrefabs[0], spawnOffset * i);
+                spawners[randomSpawner].Spawn(enemyPrefabs[0], spawnOffset * i, enemiesParent);
             }
         }
         // Spawn together
@@ -64,7 +75,7 @@ public class SpawnManager : MonoBehaviour
             int randomSpawner = UnityEngine.Random.Range(0, spawners.Count);
             for (int i = 0; i < currentWaveSize; i++)
             {
-                spawners[randomSpawner].Spawn(enemyPrefabs[0], spawnOffset * i);
+                spawners[randomSpawner].Spawn(enemyPrefabs[0], spawnOffset * i, enemiesParent);
             }
         }
     }
