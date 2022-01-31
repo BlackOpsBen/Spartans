@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     {
         spartans.AddRange(FindObjectsOfType<PlayerInterface>());
         LivesCounter.Instance.SetLives(spartans.Count);
+        FormationManager.Instance.Regroup();
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -107,5 +108,7 @@ public class PlayerController : MonoBehaviour
         }
 
         LivesCounter.Instance.SetLives(spartans.Count);
+
+        FormationManager.Instance.Regroup();
     }
 }

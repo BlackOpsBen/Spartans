@@ -613,6 +613,11 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: FleshHit
+    clip: {fileID: 8300000, guid: f8e59e5777feaf0449b5eb36df99e9ca, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
   soundGroups:
   - name: SFX
     soundCategories:
