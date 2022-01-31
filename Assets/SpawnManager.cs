@@ -54,6 +54,7 @@ public class SpawnManager : MonoBehaviour
         currentWave++;
         IncreaseWaveDifficulty();
         minDelayTriggered = false;
+        AudioManager.Instance.PlaySFX("WarHorn");
     }
 
     private void SpawnWave()

@@ -618,6 +618,11 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: WarHorn
+    clip: {fileID: 8300000, guid: 01bc2ef1c42112e48bbb22eecc98da20, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
   soundGroups:
   - name: SFX
     soundCategories:
@@ -3549,10 +3554,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6662759081699239044, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6662759081954943888, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
       propertyPath: enemiesParent
       value: 
       objectReference: {fileID: 1865164457}
+    - target: {fileID: 6662759082087393197, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662759082205713197, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662759082539368872, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662759083327231101, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662759083740857157, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6662759083746313792, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
       propertyPath: m_RootOrder
       value: 3

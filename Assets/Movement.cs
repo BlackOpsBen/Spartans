@@ -18,6 +18,8 @@ public class Movement : MonoBehaviour
 
     private bool isPlayer = false;
 
+    [SerializeField] private ParticleSystem dustPFX;
+
     private void Start()
     {
         if (GetComponent<PlayerInterface>())
@@ -44,6 +46,23 @@ public class Movement : MonoBehaviour
         else
         {
             UpdateGameObjectFacing();
+        }
+
+        ToggleDustPFX();
+    }
+
+    private void ToggleDustPFX()
+    {
+        if (Mathf.Abs(speed) > 0.1f)
+        {
+            if (dustPFX.isStopped)
+            {
+                dustPFX.Play();
+            }
+        }
+        else if (dustPFX.isPlaying)
+        {
+            dustPFX.Stop();
         }
     }
 
