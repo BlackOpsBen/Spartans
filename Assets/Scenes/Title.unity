@@ -1260,6 +1260,76 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &847364104
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6662759082270368317}
+    m_Modifications:
+    - target: {fileID: 1501008057554708619, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 26.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042300446994932746, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453022185897274250, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_Name
+      value: GroundPFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+--- !u!4 &847364105 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8224583504846681498, guid: 3b97950900a877a4c8747a01f7283b3e, type: 3}
+  m_PrefabInstance: {fileID: 847364104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &875079366 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3409865610934155137, guid: 807e88617029c4b848f61de9c06b1281, type: 3}
@@ -1487,26 +1557,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7706537214712245510, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
-      propertyPath: SFX.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7706537214712245510, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
-      propertyPath: SFX.Array.data[9].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 298665d02be46e54488816a04d9ba3a8, type: 3}
-    - target: {fileID: 7706537214712245510, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
-      propertyPath: SFX.Array.data[9].name
-      value: SpartaScream
-      objectReference: {fileID: 0}
-    - target: {fileID: 7706537214712245510, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
-      propertyPath: SFX.Array.data[9].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7706537214712245510, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
-      propertyPath: SFX.Array.data[9].volume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7706537214712245511, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -18397,6 +18447,7 @@ Transform:
   - {fileID: 6662759082503466757}
   - {fileID: 6662759082358122682}
   - {fileID: 8183106838140061496}
+  - {fileID: 847364105}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
