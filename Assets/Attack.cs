@@ -24,6 +24,8 @@ public class Attack : MonoBehaviour
 
     private Stance stance;
 
+    [SerializeField] private ParticleSystem thrustPFX;
+
     private void Start()
     {
         stance = GetComponent<Stance>();
@@ -73,6 +75,8 @@ public class Attack : MonoBehaviour
             isReady = false;
 
             AudioManager.Instance.PlaySFX("SpearAttack");
+
+            thrustPFX.Play();
         }
     }
 
