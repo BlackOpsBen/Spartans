@@ -37,8 +37,8 @@ public class GameManager : MonoBehaviour
         submitUI.SetActive(true);
     }
 
-    public void RestartGame()
+    public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(sceneName);
     }
 }

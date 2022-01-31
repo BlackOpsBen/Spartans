@@ -63,10 +63,7 @@ public class LeaderboardController : MonoBehaviour
     // Called by Submit Button
     public void OnSubmitScore()
     {
-        SubmitScore();
-        leaderboardUI.SetActive(true);
-        ShowScores();
-        submitUI.SetActive(false);
+        StartCoroutine(ScoreSequence());
     }
 
     private void SubmitScore()
@@ -82,5 +79,14 @@ public class LeaderboardController : MonoBehaviour
                 Debug.Log("Submit Failed: " + response.Error);
             }
         });
+    }
+
+    private IEnumerator ScoreSequence()
+    {
+        SubmitScore();
+        leaderboardUI.SetActive(true);
+        submitUI.SetActive(false);
+        yield return new WaitForSeconds(1.0f);
+        ShowScores();
     }
 }

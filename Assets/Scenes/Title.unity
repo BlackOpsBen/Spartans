@@ -1487,6 +1487,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7706537214712245510, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
+      propertyPath: SFX.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706537214712245510, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
+      propertyPath: SFX.Array.data[9].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 298665d02be46e54488816a04d9ba3a8, type: 3}
+    - target: {fileID: 7706537214712245510, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
+      propertyPath: SFX.Array.data[9].name
+      value: SpartaScream
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706537214712245510, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
+      propertyPath: SFX.Array.data[9].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706537214712245510, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
+      propertyPath: SFX.Array.data[9].volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7706537214712245511, guid: 61d1ac74c97c7f244934ab08240ffe15, type: 3}
       propertyPath: m_RootOrder
       value: 5
