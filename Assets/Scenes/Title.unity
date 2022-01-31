@@ -32468,7 +32468,7 @@ GameObject:
   - component: {fileID: 432669192725834831}
   - component: {fileID: 837250232512155295}
   m_Layer: 7
-  m_Name: w
+  m_Name: Spartan
   m_TagString: Spartan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
