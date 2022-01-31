@@ -1134,6 +1134,8 @@ MonoBehaviour:
   spacing: 1.5
   tolorance: 0.5
   regroupSpeed: 2
+  regroupDelay: 1
+  regroupTimeLimit: 2
 --- !u!1001 &2023154047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3517,6 +3519,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1227229401158455318, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
+      propertyPath: frequency
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3317322886520324036, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
       propertyPath: characterParent
       value: 
@@ -3525,10 +3531,6 @@ PrefabInstance:
       propertyPath: characterParent
       value: 
       objectReference: {fileID: 1934294801}
-    - target: {fileID: 6662759081954943888, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
-      propertyPath: waveInterval
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6662759083746313792, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3573,13 +3575,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6662759083746313795, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1205033463}
     - target: {fileID: 6662759083746313799, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
       propertyPath: m_Name
-      value: Pixel Perfect Camera
+      value: ParallaxScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}

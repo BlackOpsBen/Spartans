@@ -66,6 +66,8 @@ public class ArrowFall : MonoBehaviour
         if (collision.gameObject.CompareTag("Shield"))
         {
             AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_SHIELD_HIT, false);
+
+            CameraShake.Instance.AddTrauma();
         }
         else
         {

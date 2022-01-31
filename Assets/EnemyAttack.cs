@@ -173,6 +173,8 @@ public class EnemyAttack : MonoBehaviour
                 AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_SHIELD_HIT, false);
 
                 hitPFX.Play();
+
+                CameraShake.Instance.AddTrauma(0.5f);
             }
         }
     }

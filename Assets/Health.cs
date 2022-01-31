@@ -35,6 +35,8 @@ public class Health : MonoBehaviour
             PlayerController.Instance.RemoveDeadSpartan(playerInterface);
 
             AudioManager.Instance.PlaySoundFromGroup(1, AudioManager.DIALOG_SPARTAN_DEATH, true);
+
+            CameraShake.Instance.AddTrauma(1.0f);
         }
         else
         {
