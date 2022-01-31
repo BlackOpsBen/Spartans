@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
     public const int SFX_SHIELD_HIT = 0;
     public const int SFX_SHUFFLE = 1;
     public const int SFX_MARCH = 2;
+    public const int SFX_STEPS = 3;
 
     public const int DIALOG_HAOO = 0;
     public const int DIALOG_SPARTAN_DEATH = 1;

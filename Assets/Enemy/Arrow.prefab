@@ -198,30 +198,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4792218318486560049, guid: f703e1963cad73b4e8babeb778cbd86e, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792218318486560049, guid: f703e1963cad73b4e8babeb778cbd86e, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792218318486560049, guid: f703e1963cad73b4e8babeb778cbd86e, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.504717
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792218318486560049, guid: f703e1963cad73b4e8babeb778cbd86e, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.9184464
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792218318486560049, guid: f703e1963cad73b4e8babeb778cbd86e, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6406435737059113857, guid: f703e1963cad73b4e8babeb778cbd86e, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 9200035117604837203, guid: f703e1963cad73b4e8babeb778cbd86e, type: 3}
       propertyPath: m_Name
       value: HitPFX

@@ -34,6 +34,7 @@ public class EnemyAttack : MonoBehaviour
     private EnemyInterface enemyInterface;
 
     [SerializeField] private ParticleSystem slashPFX;
+    [SerializeField] private ParticleSystem hitPFX;
 
     private void Start()
     {
@@ -170,6 +171,8 @@ public class EnemyAttack : MonoBehaviour
             if (hit.transform.CompareTag("Shield"))
             {
                 AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_SHIELD_HIT, false);
+
+                hitPFX.Play();
             }
         }
     }

@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e028d1c16949145b0a98d7612c7044d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundIndex: 2
 --- !u!1 &4373829809913919253
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +787,38 @@ PrefabInstance:
     - target: {fileID: 5259082496116391508, guid: 3d741e2cf25c5dc4b821287b70314e2f, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minCurve.m_Curve.Array.data[1].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259082496116391508, guid: 3d741e2cf25c5dc4b821287b70314e2f, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.maxCurve.m_Curve.Array.data[0].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259082496116391508, guid: 3d741e2cf25c5dc4b821287b70314e2f, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.maxCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259082496116391508, guid: 3d741e2cf25c5dc4b821287b70314e2f, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minCurve.m_Curve.Array.data[0].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259082496116391508, guid: 3d741e2cf25c5dc4b821287b70314e2f, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259082496116391508, guid: 3d741e2cf25c5dc4b821287b70314e2f, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.maxCurve.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259082496116391508, guid: 3d741e2cf25c5dc4b821287b70314e2f, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.maxCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259082496116391508, guid: 3d741e2cf25c5dc4b821287b70314e2f, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minCurve.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259082496116391508, guid: 3d741e2cf25c5dc4b821287b70314e2f, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 9176287474709662784, guid: 3d741e2cf25c5dc4b821287b70314e2f, type: 3}
       propertyPath: m_Name

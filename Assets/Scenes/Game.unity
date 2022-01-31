@@ -696,6 +696,38 @@ MonoBehaviour:
         volume: 0.5
         pitch: 1
         source: {fileID: 0}
+    - name: Steps
+      soundOptions:
+      - name: Steps0
+        clip: {fileID: 8300000, guid: 4878ed97fda7a414492e4ffd673474a1, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: Steps1
+        clip: {fileID: 8300000, guid: c778e9b332f91134fbadca949593000c, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: Steps0-2
+        clip: {fileID: 8300000, guid: 4878ed97fda7a414492e4ffd673474a1, type: 3}
+        volume: 0.5
+        pitch: 0.1
+        source: {fileID: 0}
+      - name: Steps0-3
+        clip: {fileID: 8300000, guid: 4878ed97fda7a414492e4ffd673474a1, type: 3}
+        volume: 0.5
+        pitch: 2
+        source: {fileID: 0}
+      - name: Steps1-2
+        clip: {fileID: 8300000, guid: c778e9b332f91134fbadca949593000c, type: 3}
+        volume: 0.5
+        pitch: 0.1
+        source: {fileID: 0}
+      - name: Steps1-3
+        clip: {fileID: 8300000, guid: c778e9b332f91134fbadca949593000c, type: 3}
+        volume: 0.5
+        pitch: 2
+        source: {fileID: 0}
   - name: Dialog
     soundCategories:
     - name: Haoos

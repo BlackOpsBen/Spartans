@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class FootstepSound : MonoBehaviour
 {
+    public int soundIndex = 0;
+
     public void PlayFootStepSound()
     {
-        AudioManager.Instance.PlaySoundFromGroup(0, AudioManager.SFX_MARCH, false);
+        AudioManager.Instance.PlaySoundFromGroup(0, soundIndex, false);
     }
 }
