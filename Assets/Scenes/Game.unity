@@ -899,11 +899,6 @@ MonoBehaviour:
       volume: 0.5
       pitch: 1
       source: {fileID: 0}
-    - name: Music3
-      clip: {fileID: 8300000, guid: 38959c3cc3ea114459e2cd0dfcbe7ea5, type: 3}
-      volume: 0.5
-      pitch: 1
-      source: {fileID: 0}
 --- !u!1001 &1514742215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3390,7 +3385,8 @@ PrefabInstance:
       propertyPath: scoreboardUI
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6187632207948485159, guid: e5e9cfd44f11b4d8eb82cc630338cd4f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e5e9cfd44f11b4d8eb82cc630338cd4f, type: 3}
 --- !u!1001 &6397094472263052910
 PrefabInstance:
@@ -3466,7 +3462,7 @@ PrefabInstance:
       objectReference: {fileID: 1934294801}
     - target: {fileID: 6662759081954943888, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
       propertyPath: waveInterval
-      value: 60
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6662759083746313792, guid: edd3050ff6171e345be1bdd8ad5e35c9, type: 3}
       propertyPath: m_RootOrder

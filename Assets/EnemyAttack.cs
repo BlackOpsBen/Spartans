@@ -33,6 +33,8 @@ public class EnemyAttack : MonoBehaviour
 
     private EnemyInterface enemyInterface;
 
+    [SerializeField] private ParticleSystem slashPFX;
+
     private void Start()
     {
         enemyInterface = GetComponent<EnemyInterface>();
@@ -66,6 +68,8 @@ public class EnemyAttack : MonoBehaviour
                 anticipationTimer = 0.0f;
 
                 AudioManager.Instance.PlaySFX("SwordAttack");
+
+                slashPFX.Play();
             }
         }
     }
