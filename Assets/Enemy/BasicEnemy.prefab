@@ -303,7 +303,7 @@ MonoBehaviour:
   attackRot: -90
   readyPos: {x: 0.285, y: 0.155}
   readyRot: 0
-  anticipationTime: 0.5
+  anticipationTime: 0.25
   attackTime: 0.1
   resetTime: 0.25
   attackDistance: 3

@@ -59,7 +59,7 @@ public class ArrowFall : MonoBehaviour
             {
                 spartanHealth.Hit();
 
-                //AudioManager.Instance.PlaySFX("FleshHit");
+                AudioManager.Instance.PlaySFX("FleshHit");
             }
         }
 
