@@ -71,18 +71,6 @@ public class Movement : MonoBehaviour
     public void SetMoveDirection(float direction)
     {
         moveDirection = direction;
-
-        //if (isPlayer)
-        //{
-        //    if (stance.GetIsRaising())
-        //    {
-        //        UpdateGameObjectFacing();
-        //    }
-        //}
-        //else
-        //{
-        //    UpdateGameObjectFacing();
-        //}
     }
 
     private void UpdateGameObjectFacing()

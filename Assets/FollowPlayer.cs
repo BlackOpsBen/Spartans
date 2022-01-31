@@ -30,4 +30,9 @@ public class FollowPlayer : MonoBehaviour
 
         transform.position = new Vector3(Mathf.Lerp(transform.position.x, xMedian, Time.deltaTime * lerpSpeed), transform.position.y, transform.position.z);
     }
+
+    public float GetMedian()
+    {
+        return xMedian;
+    }
 }
