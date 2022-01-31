@@ -1,0 +1,420 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7706537214712245512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7706537214712245511}
+  - component: {fileID: 7706537214712245510}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7706537214712245511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706537214712245512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7706537214712245510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706537214712245512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a3742275f51b0646baece57fa80b48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SFX:
+  - name: ArrowHitGround
+    clip: {fileID: 8300000, guid: 52bbc52227d4e6c45befb21eb925d29f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: BowPull
+    clip: {fileID: 8300000, guid: 9bcd97bad06bff8429f21a7bb0b1cb90, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: BowRelease
+    clip: {fileID: 8300000, guid: c7375c7e882adc946a1a633b55f103d9, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: SpearAttack
+    clip: {fileID: 8300000, guid: 8a42dba9086a84c47a63790e07569a7a, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: SpearHit
+    clip: {fileID: 8300000, guid: f8e59e5777feaf0449b5eb36df99e9ca, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: SwordAttack
+    clip: {fileID: 8300000, guid: 37002c95e4fc3d9478814a4e777ef6f0, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: SwordHit
+    clip: {fileID: 8300000, guid: 1ad56924af6152e4684ccc94238ddf45, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: FleshHit
+    clip: {fileID: 8300000, guid: f8e59e5777feaf0449b5eb36df99e9ca, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: WarHorn
+    clip: {fileID: 8300000, guid: 01bc2ef1c42112e48bbb22eecc98da20, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  soundGroups:
+  - name: SFX
+    soundCategories:
+    - name: Shield Hit
+      soundOptions:
+      - name: Hit0
+        clip: {fileID: 8300000, guid: 293e99b3d1234db49bc0203a0954f7be, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Hit1
+        clip: {fileID: 8300000, guid: d710953a4c2c3834b93f817a1aafa907, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Hit2
+        clip: {fileID: 8300000, guid: b1dba3f145bc01d46a862b56619ce77c, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Hit3
+        clip: {fileID: 8300000, guid: fb0c046fd9770ea4a9aa534034f054e5, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+    - name: Shuffle
+      soundOptions:
+      - name: Shuffle0
+        clip: {fileID: 8300000, guid: 59c07ebd0a8e4044e8898cf55f0d4a83, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Shuffle1
+        clip: {fileID: 8300000, guid: 853c3c317bf2a744588629942dda684b, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Shuffle2
+        clip: {fileID: 8300000, guid: 854b3fd4cb182b44fa7ebdcb7cbdcafb, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Shuffle3
+        clip: {fileID: 8300000, guid: dca9c291d306d504583d9e22ea362e07, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+    - name: March
+      soundOptions:
+      - name: March0
+        clip: {fileID: 8300000, guid: 46cde2e36cbd9447093386fb35b2b532, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: March1
+        clip: {fileID: 8300000, guid: 5d61e00abc2654e538cc095dc2ccccea, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: March2
+        clip: {fileID: 8300000, guid: aa26d2fa0cb7148d4aaa1f1138cb7737, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: March3
+        clip: {fileID: 8300000, guid: ca37d0aebc0b94147bf1c6e31f07a697, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: March4
+        clip: {fileID: 8300000, guid: 97f331f317cdc447191ba33c62c60635, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: March5
+        clip: {fileID: 8300000, guid: 8aa3a4cd30c3d4a7fbd870070ab343a1, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: March6
+        clip: {fileID: 8300000, guid: 3f53fb2918ff649c6a74e3df8eb98ece, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: March7
+        clip: {fileID: 8300000, guid: ec0bb012240c7464ebbc2e412729fce3, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: March8
+        clip: {fileID: 8300000, guid: 48e0c1b4fbb0a448fb6a67e5317c9179, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+    - name: Steps
+      soundOptions:
+      - name: Steps0
+        clip: {fileID: 8300000, guid: 4878ed97fda7a414492e4ffd673474a1, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: Steps1
+        clip: {fileID: 8300000, guid: c778e9b332f91134fbadca949593000c, type: 3}
+        volume: 0.5
+        pitch: 1
+        source: {fileID: 0}
+      - name: Steps0-2
+        clip: {fileID: 8300000, guid: 4878ed97fda7a414492e4ffd673474a1, type: 3}
+        volume: 0.5
+        pitch: 0.1
+        source: {fileID: 0}
+      - name: Steps0-3
+        clip: {fileID: 8300000, guid: 4878ed97fda7a414492e4ffd673474a1, type: 3}
+        volume: 0.5
+        pitch: 2
+        source: {fileID: 0}
+      - name: Steps1-2
+        clip: {fileID: 8300000, guid: c778e9b332f91134fbadca949593000c, type: 3}
+        volume: 0.5
+        pitch: 0.1
+        source: {fileID: 0}
+      - name: Steps1-3
+        clip: {fileID: 8300000, guid: c778e9b332f91134fbadca949593000c, type: 3}
+        volume: 0.5
+        pitch: 2
+        source: {fileID: 0}
+  - name: Dialog
+    soundCategories:
+    - name: Haoos
+      soundOptions:
+      - name: Haoo0
+        clip: {fileID: 8300000, guid: 5a1cd823177c10444afd509f74ddca19, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo1
+        clip: {fileID: 8300000, guid: 067335e953e723b43801ff2273f05067, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo2
+        clip: {fileID: 8300000, guid: d163a4d866fca884492194156a131c04, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo3
+        clip: {fileID: 8300000, guid: 1a1623f7141f0344ca921314ef2177f3, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo4
+        clip: {fileID: 8300000, guid: 769665d066f609741a2c80777117b866, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo5
+        clip: {fileID: 8300000, guid: 695c76e312124e0448f08ebe3b3da652, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Haoo6
+        clip: {fileID: 8300000, guid: c31e97ddf0687a546b71b1565b21e44f, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+    - name: SpartanDeath
+      soundOptions:
+      - name: Death0
+        clip: {fileID: 8300000, guid: 67f6dbf68dc490f4891e9e87b74263f6, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death1
+        clip: {fileID: 8300000, guid: 903fca54f55f5334eaf6deb4f99625f3, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death2
+        clip: {fileID: 8300000, guid: 1b141a67e7d0d0f419bb4568447f627b, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death3
+        clip: {fileID: 8300000, guid: 75d4a6b93dd54604190413152377e14f, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death4
+        clip: {fileID: 8300000, guid: 2a4e2a23b97832d4dbb15e3c4853f5ba, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death5
+        clip: {fileID: 8300000, guid: e96a43aa3bd7ebd4693adbd2394b28e3, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death6
+        clip: {fileID: 8300000, guid: 8a58e326d4d1fe04997b4412f55e50e2, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death7
+        clip: {fileID: 8300000, guid: f6c5e8e2f707b3947b266647fc1ddd43, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death8
+        clip: {fileID: 8300000, guid: e81bd1d948e2fc544a9fcfa2464cf132, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death9
+        clip: {fileID: 8300000, guid: 687b2a8c5026aa14e86474d40b76abe3, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death10
+        clip: {fileID: 8300000, guid: bbfd136ec9d99d149ace3f7dfdb1d2c0, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+    - name: EnemyDeath
+      soundOptions:
+      - name: Death0
+        clip: {fileID: 8300000, guid: e032804ca7101a746a4dfc7079c1f68a, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death1
+        clip: {fileID: 8300000, guid: 0f35011366ab77146bc0d65fc0ef59e3, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death2
+        clip: {fileID: 8300000, guid: 61d24e5005160c64c83e7e43fd94c231, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death3
+        clip: {fileID: 8300000, guid: 2af9e9ba5c4fc574cab9b77091b4af70, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death4
+        clip: {fileID: 8300000, guid: 0c80f0f36c6850946bb5daf4e3d93918, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death5
+        clip: {fileID: 8300000, guid: 7fb8ede10d82d024095f320e1a201e47, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Death6
+        clip: {fileID: 8300000, guid: 87e3ebefb99ad6942b6ed29ae65ec049, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+    - name: Kill
+      soundOptions:
+      - name: Kill0
+        clip: {fileID: 8300000, guid: be6e725a5d1e6804fb9fb844bf5e4a72, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill1
+        clip: {fileID: 8300000, guid: 1a9abc9d7eb5e0f4ba1ead4eca58878a, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill2
+        clip: {fileID: 8300000, guid: 8e387d04e23a84447a67609fdf66ab3d, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill3
+        clip: {fileID: 8300000, guid: 6874d9a363fd3dc40a9485730880febc, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill4
+        clip: {fileID: 8300000, guid: cdb8e097285aaa343af7ba132727c46e, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill5
+        clip: {fileID: 8300000, guid: b228b8332724de44ab20519eba99f968, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill6
+        clip: {fileID: 8300000, guid: 00b771bdd094b2a4984560c616ea3884, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill7
+        clip: {fileID: 8300000, guid: 418539c8f05fec5459cfb783b32cc6ad, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill8
+        clip: {fileID: 8300000, guid: 5bc5a6b80b346ae449ce436045abfe62, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+      - name: Kill9
+        clip: {fileID: 8300000, guid: 989661946c0229845b7b464836164428, type: 3}
+        volume: 1
+        pitch: 1
+        source: {fileID: 0}
+  musicCategory:
+    name: MusicOptions
+    soundOptions:
+    - name: Music0
+      clip: {fileID: 8300000, guid: a113c113e13aeea4e809fffafbfb8bd4, type: 3}
+      volume: 0.5
+      pitch: 1
+      source: {fileID: 0}
+    - name: Music1
+      clip: {fileID: 8300000, guid: 0e6e83a379cdc2148b45c58f3f422d5d, type: 3}
+      volume: 0.5
+      pitch: 1
+      source: {fileID: 0}
+    - name: Music2
+      clip: {fileID: 8300000, guid: 2f521f7f721ad18408721183ad0fffe4, type: 3}
+      volume: 0.5
+      pitch: 1
+      source: {fileID: 0}
